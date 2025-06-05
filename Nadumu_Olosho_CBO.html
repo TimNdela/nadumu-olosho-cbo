@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadumu Olosho Community Organization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(22, 160, 54, 0.9) 0%, rgba(39, 174, 96, 0.9) 100%);
+        }
+        
+        .donate-btn {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .impact-counter {
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-12 w-auto" src="NO.jpg" alt="Nadumu Olosho Logo">
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-green-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-green-50">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-green-50">About</a>
+                    <a href="#programs" class="text-gray-700 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-green-50">Programs</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-green-50">Gallery</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-green-50">Contact</a>
+                    <a href="#donate" class="bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700 donate-btn">Donate</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-700 hover:bg-green-50 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#Nadumu Olosho" class="text-green-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-green-50">Nadumu Olosho</a>
+                <a href="#home" class="text-green-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-green-50">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-green-50">About</a>
+                <a href="#programs" class="text-gray-700 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-green-50">Programs</a>
+                <a href="#gallery" class="text-gray-700 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-green-50">Gallery</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-green-50">Contact</a>
+                <a href="#donate" class="bg-green-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Empowering Communities, Changing Lives</h1>
+                    <p class="text-lg mb-8">Nadumu Olosho is dedicated to Climate Action, uplifting youth, marginalized groups, and the needy through sustainable development programs.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#donate" class="bg-white text-green-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100 text-center">Donate Now</a>
+                        <a href="#programs" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-green-700 text-center">Our Programs</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="Climate.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Counters -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="impact-counter p-6 bg-green-50 rounded-lg">
+                    <div class="text-4xl font-bold text-green-700 mb-2" id="youth-count">0</div>
+                    <div class="text-gray-600">Youth Empowered</div>
+                </div>
+                <div class="impact-counter p-6 bg-green-50 rounded-lg">
+                    <div class="text-4xl font-bold text-green-700 mb-2" id="community-count">0</div>
+                    <div class="text-gray-600">Communities Reached</div>
+                </div>
+                <div class="impact-counter p-6 bg-green-50 rounded-lg">
+                    <div class="text-4xl font-bold text-green-700 mb-2" id="programs-count">0</div>
+                    <div class="text-gray-600">Active Programs</div>
+                </div>
+                <div class="impact-counter p-6 bg-green-50 rounded-lg">
+                    <div class="text-4xl font-bold text-green-700 mb-2" id="volunteers-count">0</div>
+                    <div class="text-gray-600">Dedicated Volunteers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Nadumu Olosho</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Story</h3>
+                    <p class="text-gray-600 mb-4">Founded by Victor Solitei, Nadumu Olosho began as a small initiative to address the pressing needs of marginalized communities in our region. What started as a passion project has now grown into a full-fledged community-based organization making tangible impacts.</p>
+                    <p class="text-gray-600 mb-6">We believe in the power of collective action and community-driven solutions to create sustainable change.</p>
+                    
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="CEO.png" alt="Victor Solitei" class="w-16 h-16 rounded-full border-2 border-green-600">
+                        <div>
+                            <h4 class="font-medium text-gray-800">Victor Solitei</h4>
+                            <p class="text-sm text-gray-600">Founder & Director</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/nadumuolosho?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="inline-flex items-center text-green-600 hover:text-green-800">
+                        <i class="fab fa-instagram mr-2"></i> 
+                    </a>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+                        <p class="text-gray-600 mb-6">To empower youth, marginalized communities, and the needy through education, skills development, and sustainable livelihood programs that foster self-reliance and community resilience.</p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Vision</h3>
+                        <p class="text-gray-600 mb-6">A society where every individual, regardless of their background, has equal opportunities to thrive and contribute meaningfully to community development.</p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Core Values</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-hands-helping text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700">Community</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-hand-holding-heart text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700">Compassion</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-balance-scale text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700">Equity</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-seedling text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700">Sustainability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Programs</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">We implement targeted programs to address specific community needs and create lasting impact.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Youth Education Initiative</h3>
+                        <p class="text-gray-600 mb-4">Providing scholarships, mentorship, and learning resources to underprivileged youth to ensure access to quality education.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-green-600 font-medium"><i class="fas fa-users mr-1"></i> 120+ Beneficiaries</span>
+                            <a href="#" onclick="openYouthModal()" class="text-green-600 hover:text-green-800 text-sm font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Youth Education Modal -->
+<div id="youthModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden items-center justify-center p-4 overflow-auto">
+  <div class="bg-white max-w-3xl w-full rounded-lg shadow-lg relative">
+    <button onclick="closeYouthModal()" class="absolute top-2 right-3 text-gray-600 hover:text-red-500 text-xl font-bold">&times;</button>
+    <div class="p-6">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Youth Education Forum – Success Story</h2>
+      <p class="text-gray-700 mb-4">
+        On <strong>August 23rd, 2024, Nadumu Olosho</strong> in partnership with <strong>KCA University, Umma University, East African University, Kajiado County Youth Alliance,</strong> and other important stakeholder in the county's education held a highly successful <strong>Youth Education Forum</strong> at PEFA Church, Imaroro Town.
+        The event empowered youth with skills, guidance, and inspiration through engaging workshops, panel discussions, and career mentorship. Summary of the event:
+      </p>
+
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        
+        <li>Motivational talks by education leaders</li>
+        <li>Career guidance and networking</li>
+        <li>Tree planting and sanitary pads donation</li>
+        <li>Interactive Workshops and Q&A Sessions</li>
+      </ul>
+
+      <p class="text-gray-700 mb-4">
+        Attendees included high school and university/college students, recent graduates, parents, and local leaders. The forum fostered hope and direction for many youths in our community.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <img src="YOUTH 3.jpg" alt="Lecture Session" class="rounded shadow-md w-full">
+        <img src="Tree 1.jpg" alt="Tree Planting" class="rounded shadow-md w-full">
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function openYouthModal() {
+    document.getElementById('youthModal').classList.remove('hidden');
+    document.getElementById('youthModal').classList.add('flex');
+  }
+
+  function closeYouthModal() {
+    document.getElementById('youthModal').classList.remove('flex');
+    document.getElementById('youthModal').classList.add('hidden');
+  }
+</script>
+
+                
+                <!-- Program 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-briefcase text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Skills Development Program</h3>
+                        <p class="text-gray-600 mb-4">Vocational training and entrepreneurship workshops to equip community members with marketable skills.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-green-600 font-medium"><i class="fas fa-users mr-1"></i> 85+ Graduates</span>
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-seedling text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Climate Action</h3>
+                        <p class="text-gray-600 mb-4">Empowering communities with climate-smart practices to build resilience, protect the environment, and ensure a sustainable future.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-green-600 font-medium"><i class="fas fa-users mr-1"></i> 500+ Trees planted</span>
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-female text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Women Empowerment</h3>
+                        <p class="text-gray-600 mb-4">Programs specifically designed to uplift women through education, skills training, and microfinance opportunities.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-green-600 font-medium"><i class="fas fa-users mr-1"></i> 150+ Women Empowered</span>
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 5 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Community Health Outreach</h3>
+                        <p class="text-gray-600 mb-4">Mobile clinics, health education, and awareness campaigns to improve community health outcomes.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-green-600 font-medium"><i class="fas fa-users mr-1"></i> 500+ Served</span>
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 6 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-hands-helping text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Community Support</h3>
+                        <p class="text-gray-600 mb-4">Direct assistance to the most vulnerable members of our community through food drives, clothing donations, and shelter support.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-green-600 font-medium"><i class="fas fa-users mr-1"></i> 300+ Families Helped</span>
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-16 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Gallery</h2>
+      <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-4">Moments that capture our journey of transformation.</p>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="relative w-full overflow-hidden rounded-lg shadow-lg">
+      <div id="carouselImages" class="flex transition-transform duration-700 ease-in-out">
+        <img src="Climate 2.png" class="w-full flex-shrink-0 object-contain h-auto max-h-[500px]" alt="Climate Action">
+        <img src="Youth 1.png" class="w-full flex-shrink-0 object-contain h-auto max-h-[500px]" alt="Youth Forum">
+        <img src="Youth 2.png" class="w-full flex-shrink-0 object-contain h-auto max-h-[500px]" alt="Lecture">
+        <img src="YOUTH 3.jpg" class="w-full flex-shrink-0 object-contain h-auto max-h-[500px]" alt="Women's Group">
+        <img src="Tree 1.jpg" class="w-full flex-shrink-0 object-contain h-auto max-h-[500px]" alt="Community Meeting">
+       
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const carousel = document.getElementById('carouselImages');
+  let index = 0;
+
+  setInterval(() => {
+    index++;
+    if (index >= carousel.children.length) index = 0;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }, 3500); // every 3.5 seconds
+</script>
+
+
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What People Say</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Thanks to Nadumu Olosho's skills training, I was able to start my own tailoring business and now support my family. This organization truly changes lives."</p>
+                    <div class="flex items-center">
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-800">Naramatisho M.</h4>
+                            <p class="text-sm text-gray-600">Skills Program Graduate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The youth mentorship program gave me direction when I needed it most. I'm now in university pursuing my dreams, all because someone believed in me."</p>
+                    <div class="flex items-center">
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-800">James K.</h4>
+                            <p class="text-sm text-gray-600">Scholarship Beneficiary</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a volunteer with Nadumu Olosho, I've witnessed firsthand the transformative power of community-driven development. Their approach is truly inspiring."</p>
+                    <div class="flex items-center">
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-800">Naisula N.</h4>
+                            <p class="text-sm text-gray-600">Organization Volunteer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-16 bg-green-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">Your Support Makes a Difference</h2>
+                    <p class="text-lg mb-6">Every contribution, no matter the size, helps us continue our mission of empowering communities and changing lives.</p>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3">Ways to Give:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                                <span>One-time donation to support our general programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                                <span>Monthly sponsorship for sustainable impact</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                                <span>Sponsor a specific program or initiative</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                                <span>In-kind donations (books, equipment, supplies)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="bg-white rounded-lg shadow-xl p-8 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-green-700">Make a Donation</h3>
+                        
+                        
+<form id="donationForm">
+  <div class="mb-4 text-center">
+    
+    <p class="text-lg text-gray-800 font-semibold">Paybill Number: <span class="text-green-700">222111</span></p>
+    <p class="text-lg text-gray-800 font-semibold">Account Number: <span class="text-green-700">400700</span></p>
+    <p class="text-lg text-gray-800 font-semibold">Acc. Name: <span class="text-green-700">NADUMU OLOSHO CBO</span></p>
+</div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-medium mb-2" for="amount">Donation Amount (KES)</label>
+    <div class="grid grid-cols-3 gap-2">
+      <button type="button" class="preset-amount py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-green-50">500</button>
+      <button type="button" class="preset-amount py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-green-50">1000</button>
+      <button type="button" class="preset-amount py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-green-50">5000</button>
+    </div>
+    <div class="mt-2">
+      <input type="number" id="amount" name="amount" class="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border" placeholder="Other Amount" required>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-medium mb-2" for="mpesa-confirm">M-Pesa Confirmation Code</label>
+    <input type="text" id="mpesa-confirm" name="mpesa_confirm" class="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border" placeholder="e.g., QET56GH7F2" required>
+  </div>
+
+  <div class="mt-6">
+    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700">
+      Submit Donation
+    </button>
+  </div>
+</form>
+<script>
+  document.querySelectorAll('.preset-amount').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('amount').value = btn.textContent;
+    });
+  });
+
+  document.getElementById('donationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const amount = document.getElementById('amount').value.trim();
+    const confirmationCode = document.getElementById('mpesa-confirm').value.trim();
+
+    const validCode = /^[A-Za-z0-9]{10,12}$/;
+
+    if (!amount || !confirmationCode) {
+      alert("Please enter both the donation amount and the M-Pesa confirmation code.");
+      return;
+    }
+
+    if (!validCode.test(confirmationCode)) {
+      alert("Please enter a valid M-Pesa confirmation code (10–12 characters, letters and numbers).");
+      return;
+    }
+
+    alert("Thank you so much for your generous donation. Your contribution will help us bring meaningful impact to the community. We are so grateful for your support!");
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
+
+
+    </section>
+<!-- UPDATED CONTACT FORM SECTION -->
+
+<section id="contact" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+      <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+        We'd love to hear from you! Reach out for partnerships, volunteer opportunities, or any inquiries.
+      </p>
+    </div>
+
+    <div class="md:flex md:space-x-8">
+      <!-- Contact Us -->
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+          <div class="flex items-start mb-6">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <i class="fas fa-map-marker-alt text-green-600"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-800">Address</h4>
+              <p class="text-gray-600">123 Community Center Road<br>Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div class="flex items-start mb-6">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <i class="fas fa-phone-alt text-green-600"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-800">Phone</h4>
+              <p class="text-gray-600">+254 790 445 703<br>+254 706 386 279</p>
+            </div>
+          </div>
+          <div class="flex items-start mb-6">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <i class="fas fa-envelope text-green-600"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-800">Email</h4>
+              <p class="text-gray-600">info@nadumuolosho.org<br>contact@nadumuolosho.org</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <i class="fab fa-instagram text-green-600"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-800">Social Media</h4>
+              <div class="flex space-x-4 mt-2">
+                <a href="https://www.instagram.com/nadumuolosho" target="_blank" class="text-green-600 hover:text-green-800 text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-green-600 hover:text-green-800 text-xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-green-600 hover:text-green-800 text-xl"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-green-600 hover:text-green-800 text-xl"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Send Us a Message -->
+      <div class="md:w-1/2">
+        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+          <!-- Original contact form preserved -->
+          <form id="contactForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                <input type="text" id="first-name" name="first_name" required class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2 border">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2 border">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" id="email" name="user_email" required class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2 border">
+            </div>
+            <div class="mb-4">
+              <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+              <input type="tel" id="phone" name="user_phone" class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2 border">
+            </div>
+            <div class="mb-4">
+              <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+              <select id="subject" name="subject" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                <option>General Inquiry</option>
+                <option>Volunteer Opportunity</option>
+                <option>Partnership</option>
+                <option>Donation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="message" name="message" rows="4" required class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2 border"></textarea>
+            </div>
+            <div class="mt-6">
+              <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS integration script -->
+<script>
+  emailjs.init("jp2GlRfKUWEOG1YUA"); // Use your actual public key
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_05ypqmr', 'template_0e2zsmg', this)
+    .then(() => {
+      alert('Message sent successfully!');
+      this.reset();
+    }, (error) => {
+      alert('Message failed to send. Please try again later.');
+      console.error('EmailJS Error:', error);
+    });
+});
+</script>
+
+
+    <!-- Volunteer CTA -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Join Our Volunteer Team</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">We're always looking for passionate individuals to join us in making a difference. Whether you can offer your time, skills, or expertise, your contribution matters.</p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
+                Become a Volunteer
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-400">Nadumu Olosho is a community-based organization dedicated to empowering youth, marginalized communities, and the needy through sustainable development programs.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#programs" class="text-gray-400 hover:text-white">Programs</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Youth Education</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Skills Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Women Empowerment</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sustainable Agriculture</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community Health</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/nadumuolosho?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="text-gray-400 mb-2">Subscribe to our newsletter</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md text-gray-800 w-full">
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-r-md hover:bg-green-700"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2023 Nadumu Olosho Community Organization. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = [
+                { element: 'youth-count', target: 850, duration: 2000 },
+                { element: 'community-count', target: 12, duration: 2000 },
+                { element: 'programs-count', target: 6, duration: 2000 },
+                { element: 'volunteers-count', target: 45, duration: 2000 }
+            ];
+
+            counters.forEach(counter => {
+                const element = document.getElementById(counter.element);
+                const target = counter.target;
+                const duration = counter.duration;
+                const increment = target / (duration / 16); // 60fps
+
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        clearInterval(timer);
+                        current = target;
+                    }
+                    element.textContent = Math.floor(current).toLocaleString();
+                }, 16);
+            });
+        }
+
+        // Intersection Observer for counter animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const impactSection = document.querySelector('.impact-counter');
+        if (impactSection) {
+            observer.observe(impactSection);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Replace with your EmailJS public key
+
+  document.querySelectorAll('.preset-amount').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('amount').value = btn.textContent;
+    });
+  });
+
+  document.getElementById('donationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const amount = document.getElementById('amount').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const method = document.getElementById('paymentMethod').value;
+
+    if (!amount || !phone || !email) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    FlutterwaveCheckout({
+      public_key: "FLWPUBK_TEST-xxxxxxxxxxxxxxxxxx-X", // Replace with real Flutterwave key
+      tx_ref: "NADUMU-" + Date.now(),
+      amount: amount,
+      currency: "KES",
+      payment_options: method === 'mpesa' ? "mpesa" : "card",
+      customer: {
+        email: email,
+        phone_number: phone,
+        name: "Nadumu Donor"
+      },
+      callback: function (data) {
+        alert("Thank you for your donation! Ref: " + data.tx_ref);
+
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+          donor_name: "Nadumu Donor",
+          donor_email: email,
+          donor_phone: phone,
+          amount: amount,
+          payment_method: method,
+          reference: data.tx_ref
+        }).then(() => {
+          console.log("Admin notified via EmailJS");
+        }).catch(error => {
+          console.error("Email notification failed:", error);
+        });
+      },
+      customizations: {
+        title: "Nadumu Olosho",
+        description: "Donation to support community programs",
+        logo: "NO.jpg"
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
